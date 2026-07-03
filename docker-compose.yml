@@ -1,0 +1,45 @@
+# =============================================================================
+# Automated Tender Response Agent — Docker Compose
+# =============================================================================
+# Start everything:
+#   docker-compose up --build
+#
+# Stop and remove volumes:
+#   docker-compose down -v
+# =============================================================================
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tender_agent_api
+    ports:
+      - "8000:8000"
+    environment:
+      # Override any .env values here (or use an env_file)
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o}
+      - OPENAI_EMBEDDING_MODEL=${OPENAI_EMBEDDING_MODEL:-text-embedding-3-small}
+      - CHROMA_PERSIST_DIR=/app/vector_store
+      - CHROMA_COLLECTION_NAME=${CHROMA_COLLECTION_NAME:-tender_docs}
+      - CHUNK_SIZE=${CHUNK_SIZE:-1000}
+      - CHUNK_OVERLAP=${CHUNK_OVERLAP:-200}
+      - TOP_K_RESULTS=${TOP_K_RESULTS:-5}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      # Persist the vector store across container restarts
+      - vector_store_data:/app/vector_store
+      # Persist uploaded and processed documents
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  vector_store_data:
+    driver: local
