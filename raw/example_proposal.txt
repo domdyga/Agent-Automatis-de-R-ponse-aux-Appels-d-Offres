@@ -1,0 +1,61 @@
+ACME CONSULTING — PAST PROPOSAL EXTRACT
+=======================================
+
+Project: Enterprise Data Platform for Ministry of Finance
+Client:  French Ministry of Finance
+Year:    2023
+
+EXECUTIVE SUMMARY
+-----------------
+Acme Consulting proposed a comprehensive, cloud-native data platform designed to centralise,
+process, and analyse financial data across 12 ministerial departments. Our team of 18 experts
+delivered the project within 9 months, under budget by 8%.
+
+TECHNICAL APPROACH
+------------------
+We adopted a modern data lakehouse architecture using Apache Spark for distributed processing,
+Delta Lake for ACID-compliant storage, and dbt for transformation pipelines.
+Security was enforced via role-based access control (RBAC) and end-to-end encryption at rest
+and in transit.
+
+METHODOLOGY
+-----------
+Phase 1 — Discovery & Architecture (weeks 1–4):
+  Stakeholder interviews, as-is analysis, technical requirements gathering.
+
+Phase 2 — Platform Build (weeks 5–24):
+  Infrastructure provisioning (Terraform), CI/CD pipelines (GitHub Actions),
+  ingestion connectors for 7 legacy systems.
+
+Phase 3 — Migration & Testing (weeks 25–32):
+  Data migration, UAT with department leads, performance benchmarking.
+
+Phase 4 — Handover & Training (weeks 33–36):
+  Knowledge transfer sessions, runbook documentation, hypercare support.
+
+PROJECT ORGANISATION
+--------------------
+- Project Director: Marie Dupont (PMP certified, 15 years experience)
+- Lead Architect: Jean-Marc Leroy (AWS Solutions Architect Professional)
+- 4 Senior Data Engineers
+- 2 QA Engineers
+- 1 Security Specialist
+
+OUTCOME
+-------
+99.97% platform uptime in first 6 months.
+Analytics query performance improved by 340% vs legacy system.
+Cost saving of €1.2M annually through infrastructure consolidation.
+
+KEY TECHNOLOGIES USED
+---------------------
+- Cloud: AWS (S3, Glue, Redshift, Lambda, IAM)
+- Processing: Apache Spark 3.4, Delta Lake, dbt
+- Orchestration: Apache Airflow
+- Monitoring: Datadog, PagerDuty
+- IaC: Terraform 1.5
+- CI/CD: GitHub Actions
+
+REFERENCES
+----------
+Available upon request. NDA applies.

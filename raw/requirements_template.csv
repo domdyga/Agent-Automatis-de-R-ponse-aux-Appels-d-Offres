@@ -1,0 +1,13 @@
+id,category,requirement,priority,acceptance_criteria
+REQ-001,Functional,The system shall ingest PDF documents automatically,High,PDF files are parsed and indexed within 60 seconds
+REQ-002,Functional,The system shall support DOCX document ingestion,High,Word documents are parsed without formatting errors
+REQ-003,Functional,The system shall provide a REST API for document upload,High,API returns 201 on successful upload
+REQ-004,Functional,The system shall generate proposal sections automatically,High,All 5 proposal sections are present in the response
+REQ-005,Functional,The system shall support conversational Q&A,Medium,Follow-up questions use prior conversation context
+REQ-006,Performance,API response time for /ask shall be under 5 seconds,High,p95 latency < 5s under normal load
+REQ-007,Performance,The system shall handle 50 concurrent users,Medium,No degradation at 50 concurrent requests
+REQ-008,Security,All data in transit shall be encrypted (TLS 1.2+),High,TLS certificate present and valid
+REQ-009,Security,API keys shall not be exposed in logs,High,Log audit confirms no key leakage
+REQ-010,Deployment,The system shall run via Docker Compose with a single command,High,docker-compose up --build starts successfully
+REQ-011,Maintainability,Code coverage shall exceed 80%,Medium,pytest --cov report >= 80%
+REQ-012,Usability,The API shall provide Swagger documentation,Low,/docs endpoint returns valid OpenAPI spec

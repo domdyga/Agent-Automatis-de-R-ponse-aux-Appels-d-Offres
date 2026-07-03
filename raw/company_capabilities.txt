@@ -1,0 +1,62 @@
+ACME CONSULTING — COMPANY CAPABILITIES
+=======================================
+
+ABOUT US
+--------
+Acme Consulting is a technology and data consultancy founded in 2010.
+Headquarters: Paris, France.
+Offices: London, Brussels, Luxembourg.
+Staff: 320 consultants, 80% technical profiles.
+Certifications: ISO 27001, ISO 9001, SOC 2 Type II.
+
+CORE COMPETENCIES
+-----------------
+
+1. Data Engineering & Architecture
+   - Data lakehouse design (Medallion architecture)
+   - Real-time streaming (Apache Kafka, Flink)
+   - Batch processing (Spark, dbt, Airflow)
+   - Cloud platforms: AWS, Azure, GCP
+
+2. Artificial Intelligence & Machine Learning
+   - Supervised & unsupervised ML (scikit-learn, XGBoost, PyTorch)
+   - Large Language Models (GPT-4, Claude, Llama)
+   - RAG systems and knowledge bases
+   - MLOps (MLflow, Kubeflow, SageMaker)
+
+3. Business Intelligence & Analytics
+   - Dashboarding: Power BI, Tableau, Metabase
+   - Data modelling (Kimball, Data Vault)
+   - KPI frameworks and reporting automation
+
+4. Cloud & DevOps
+   - Infrastructure as Code (Terraform, Pulumi)
+   - Kubernetes orchestration (EKS, AKS, GKE)
+   - CI/CD pipelines (GitHub Actions, GitLab CI)
+   - Security & compliance (GDPR, NIS2)
+
+NOTABLE CLIENTS
+---------------
+- French Ministry of Finance (data platform)
+- European Central Bank (analytics modernisation)
+- Total Energies (IoT data pipeline)
+- BNP Paribas (ML risk scoring)
+- SNCF (predictive maintenance)
+
+PRICING MODEL
+-------------
+- Time & Materials: €850–€1 400 / day depending on seniority
+- Fixed-price packages available for well-defined scopes
+- Managed services from €15 000 / month
+
+QUALITY ASSURANCE
+-----------------
+All deliverables undergo peer review, automated testing, and a dedicated QA phase.
+We guarantee 99.5% uptime SLA on managed infrastructure contracts.
+
+PARTNERSHIP ECOSYSTEM
+---------------------
+- AWS Advanced Consulting Partner
+- Microsoft Azure Expert MSP
+- Databricks Partner
+- dbt Labs Partner
