@@ -1,0 +1,27 @@
+# Environment
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Vector store (large binary data)
+vector_store/
+
+# Generated output
+data/processed/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Docker
+*.log
